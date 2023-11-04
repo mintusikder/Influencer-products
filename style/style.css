@@ -127,6 +127,53 @@ p {
   line-height: 143%;
   letter-spacing: 0.252px;
 }
+.collection-more{
+  text-align: right;
+  width: 1020px;
+  margin: auto;
+  color: rgba(224, 44, 109, 0.87);
+
+font-size: 16px;
+
+font-weight: 700;
+margin-bottom: 100px;
+}
+/* products-section */
+.products-section{
+  width: 75%;
+  margin: auto;
+}
+.products{
+  display: flex;
+  gap: 95px;
+  align-items: center;
+  margin-bottom: 130px;
+}
+.products-text h2{
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 60px;
+}
+.products-text p{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #6C6C6C;
+  margin: 16px 0 26px 0;
+}
+.products-text button{
+padding: 10px 24px;
+background: #E02C6D;
+font-size: 16px;
+font-weight: 700;
+color: white;
+border: none;
+}
+
+
+
+
+
 
 @media screen and (max-width: 576px) {
   .header {
