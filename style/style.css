@@ -169,14 +169,21 @@ font-weight: 700;
 color: white;
 border: none;
 }
-
-
+/* footer */
+.footer{
+  background: black;
+  width: 100%;
+  height: 239px;
+  color: #fff;
+  text-align: center;
+ padding-top:100px ;
+}
 
 
 
 
 @media screen and (max-width: 576px) {
-  .header {
+  .header , .products{
     flex-direction: column-reverse;
     text-align: center;
   }
@@ -198,6 +205,9 @@ border: none;
   .collection-container{
     width: 85%;
     margin: auto;
+  }
+  .hide{
+    display: none;
   }
 }
 
