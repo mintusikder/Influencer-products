@@ -12,7 +12,8 @@
 /* header section */
 .nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 130px;
   align-items: center;
   height: 100px;
 }
@@ -34,7 +35,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 74%;
+  width: 85%;
   margin: auto;
 }
 .header h1 {
@@ -58,21 +59,83 @@
   border: none;
   color: white;
 }
+/* brand logo section */
 .brand-logo {
   display: flex;
-  width: 60%;
+  width: 75%;
   margin: auto;
   margin-top: 50px;
   justify-content: space-around;
 }
+/* Collection section  */
+
+.collection-container {
+  width: 70%;
+  margin: auto;
+}
+.collection-container h2 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 60px;
+  text-align: center;
+  margin: 100px 0 50px 0;
+}
+.collection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.collection-box {
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  width: 329px;
+  height: 476px;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+.collection-box h3 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 40px;
+  color: #18191f;
+  margin-top: 16px;
+  margin-bottom: 6px;
+}
+.collection-box h5 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #18191f;
+  margin-top: 6px;
+  margin-bottom: 5px;
+}
+.rating {
+  display: flex;
+  gap: 10px;
+}
+.rating i {
+  color: #fb8200;
+}
+.rating span {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 143%;
+  letter-spacing: 0.252px;
+}
+
 @media screen and (max-width: 576px) {
   .header {
     flex-direction: column-reverse;
     text-align: center;
   }
-  .header img{
+  .header img {
     width: 202px;
-height: 190px;
+    height: 190px;
   }
   .nav,
   .brand-logo {
@@ -80,5 +143,14 @@ height: 190px;
     /* flex-direction: column; */
     gap: 20px;
     text-align: center;
+    width: 90%;
+  }
+  .collection{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .collection-container{
+    width: 85%;
+    margin: auto;
   }
 }
+
