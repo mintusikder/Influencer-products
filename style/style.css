@@ -36,7 +36,6 @@
   align-items: center;
   width: 74%;
   margin: auto;
-
 }
 .header h1 {
   font-size: 52px;
@@ -58,4 +57,28 @@
   background: #e02c6d;
   border: none;
   color: white;
+}
+.brand-logo {
+  display: flex;
+  width: 60%;
+  margin: auto;
+  margin-top: 50px;
+  justify-content: space-around;
+}
+@media screen and (max-width: 576px) {
+  .header {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .header img{
+    width: 202px;
+height: 190px;
+  }
+  .nav,
+  .brand-logo {
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    gap: 20px;
+    text-align: center;
+  }
 }
