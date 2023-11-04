@@ -144,6 +144,7 @@ margin-bottom: 100px;
   margin: auto;
 }
 .products{
+  margin-top: 100px;
   display: flex;
   gap: 95px;
   align-items: center;
